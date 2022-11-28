@@ -1,0 +1,7 @@
+<div>
+  <h2>Choisissez parmi une selection de livre sur l'histoire médiéval</h2>
+  <div>
+    <app-output (bookEmitter)="updateSelectedBook($event)" [books]="books"></app-output>
+    <app-input *ngIf="selectedBook" [book]="getSelectedBook()"></app-input>
+  </div>
+</div>
